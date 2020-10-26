@@ -8,7 +8,14 @@ import './App.css';
 import './tailwind.output.css';
 
 function App() {
-  const socket = socketIOClient("https://blissful-volhard-022c26.netlify.app/");
+  const connectionOptions = {
+    "force new connection": true,
+    "reconnectionAttempts": "Infinity",
+    "timeout": 10000,
+    "transports": ["websocket"]
+  };
+  const socketio_url = "https://blissful-volhard-022c26.netlify.app/";
+  const socket = socketIOClient(socketio_url, connectionOptions);
   const [speed, setSpeed] = useState(undefined);
   const [loading, setLoading] = useState(false);
   var stream = ss.createStream();
