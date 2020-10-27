@@ -8,7 +8,7 @@ import './App.css';
 import './tailwind.output.css';
 
 function App() {
-  var ENDPOINT = "https://speedchecked.herokuapp.com/";
+  var ENDPOINT = "https://blissful-volhard-022c26.netlify.app/";
   if (process.env.NODE_ENV === "development") {
     ENDPOINT = "http://localhost:5000/";
   }
