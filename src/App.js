@@ -13,7 +13,7 @@ function App() {
     ENDPOINT = "http://localhost:5000/";
   }
 
-  const socket = socketIOClient(ENDPOINT);
+  const socket = socketIOClient(ENDPOINT, { transport: ['websocket'] });
   const [speed, setSpeed] = useState(undefined);
   const [loading, setLoading] = useState(false);
   var stream = ss.createStream();
