@@ -8,7 +8,7 @@ import './App.css';
 import './tailwind.output.css';
 
 function App() {
-  var ENDPOINT = "https://cors-anywhere.herokuapp.com/https://speedchecked.herokuapp.com/";
+  var ENDPOINT = "https://speedchecked.herokuapp.com/";
   if (process.env.NODE_ENV === "development") {
     ENDPOINT = "http://localhost:5000/";
   }
