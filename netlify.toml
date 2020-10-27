@@ -1,0 +1,5 @@
+[[headers]]
+for = "/*"
+[headers.values]
+Access-Control-Allow-Origin = "https://speedchecked.netlify.app/"
+Access-Control-Allow-Credentials = true 
